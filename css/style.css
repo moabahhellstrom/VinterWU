@@ -1,0 +1,18 @@
+body {
+    background-color: #c0392b;
+}
+
+#startsida {
+    display:grid;
+    height: 200vh;
+    width: auto;
+    grid-template-columns: 1vh;
+    grid-template-rows: 1vh; 
+    gap: 3px;
+    grid-template-areas:
+    "hd"
+}
+
+header {
+    grid-area: hd;
+}
