@@ -1,18 +1,96 @@
 body {
-    background-color: #c0392b;
+    background-color: #f3f2e9;
 }
 
 #startsida {
-    display:grid;
-    height: 200vh;
+   display: grid;
+    height: 310vh;
     width: auto;
-    grid-template-columns: 1vh;
-    grid-template-rows: 1vh; 
+    grid-template-columns: 100%;
+    grid-template-rows: 12vh 1fr 2fr 22vh; 
     gap: 3px;
     grid-template-areas:
     "hd"
+    "img"
+    "mn"
+    "ft"
 }
 
 header {
     grid-area: hd;
+    background-color: #c0392b;
+}
+
+
+.navigation {
+nav {
+    justify-content: right;
+    margin-top: 1vh;
+}
+
+nav a {
+    color: azure;
+}
+
+nav a:hover {
+    color: black;
+}
+}
+
+
+
+#image {
+    grid-area: img;
+}
+
+#image img {
+    display: block;
+    width: 100%;
+}
+
+
+main {
+    grid-area: mn;
+    background-color: #f3f2e9;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    flex-direction: column;
+}
+
+.box {
+    min-width: 150vh;
+    background-color: #f3f2e9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70vw;        
+    height: 130vh;
+    text-align: center;
+}
+
+.gallery-link {
+    display: block;
+    margin-bottom: 1vh;
+    margin-top: 10vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #c0392b;
+    color: #f3f2e9;
+    width: fit-content;
+    margin: 40px auto 0 auto;
+    
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    grid-area: ft;
+    background-color: rgb(40, 39, 45);
+    color: #f3f2e9;
+    text-align: center;
 }
